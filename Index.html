@@ -1,2 +1,292 @@
-HELLO
-JE SUSI UN GROUPE 
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafs | Data & AI Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080d19;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #0d1425;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 10%;
+            background: radial-gradient(circle at 80% 50%, #123456, #080d19 60%);
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #b8c4d9;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #38bdf8;
+            color: #080d19;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+            color: #b8c4d9;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #111c30;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #23334d;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #b8c4d9;
+            line-height: 1.7;
+        }
+
+        .contact {
+            text-align: center;
+            background: #0d1425;
+        }
+
+        .contact p {
+            color: #b8c4d9;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #8794aa;
+            background: #080d19;
+        }
+
+        @media(max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            section {
+                padding: 60px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">HAFS.</div>
+
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span>Hafs</span></h1>
+
+            <p>
+                Étudiant en Intelligence Artificielle et Data Science.
+                Passionné par l'analyse des données, le Machine Learning
+                et les nouvelles technologies.
+            </p>
+
+            <a href="#projects" class="btn">Découvrir mes projets</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">À <span>propos</span></h2>
+
+        <p class="about">
+            Je développe mes compétences dans les domaines de la Data
+            Analytics, de l'intelligence artificielle et de la programmation.
+            Mon objectif est de transformer les données en informations
+            utiles et de créer des solutions innovantes.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Mes <span>compétences</span></h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Python</h3>
+                <p>Programmation, manipulation de données et automatisation.</p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <p>Modèles prédictifs, classification et analyse intelligente.</p>
+            </div>
+
+            <div class="card">
+                <h3>SQL</h3>
+                <p>Gestion, extraction et analyse de bases de données.</p>
+            </div>
+
+            <div class="card">
+                <h3>Data Analytics</h3>
+                <p>Analyse de données, visualisation et interprétation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Mes <span>projets</span></h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Analyse de données</h3>
+                <p>Étude et visualisation de données avec Python et Excel.</p>
+            </div>
+
+            <div class="card">
+                <h3>Projet Machine Learning</h3>
+                <p>Développement d'un modèle de prédiction à partir de données.</p>
+            </div>
+
+            <div class="card">
+                <h3>Base de données SQL</h3>
+                <p>Création et exploitation d'une base de données relationnelle.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Me <span>contacter</span></h2>
+
+        <p>Vous avez un projet ou une opportunité de stage ? Contactez-moi.</p>
+
+        <a href="mailto:ton.email@gmail.com" class="btn">
+            Envoyer un email
+        </a>
+    </section>
+
+    <footer>
+        © 2026 Hafs - Portfolio Data & AI. Tous droits réservés.
+    </footer>
+
+    <script>
+        console.log("Bienvenue sur mon portfolio !");
+    </script>
+
+</body>
+</html>
+ 
